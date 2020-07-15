@@ -20,9 +20,7 @@ def home_page():
 @app.route('/upload', methods=['GET', 'POST'])
 def upload_page():
     if request.method == 'POST':
-        # check if there is a file in the request
-       # if 'file' not in request.files:
-        #    return render_template('upload.html', msg='No file selected')
+   
         file = request.form['img']
         # if no file is selected
         if file.filename == '':
